@@ -1,1 +1,24 @@
 @charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@font-face {
+    font-family: 'Gimbal Extended';
+    src: url('../assets/fonts/Gimbal\ Extended\ Regular.otf') format('opentype');
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Made Soulmaze';
+    src: url("../assets/fonts/MADE\ Soulmaze\ PERSONAL\ USE.otf");
+}
+
+@font-face {
+    font-family: 'Made Soulmaze Outline';
+    src: url('../assets/fonts/MADE\ Soulmaze\ Outline\ PERSONAL\ USE.otf');
+}
+
+:root{
+    --cor01: #ff3333;
+    --cor02: #000033;
+    --cor03: #0cdd70;
+    --cor04: #25ff8e;
+}
