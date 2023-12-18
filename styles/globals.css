@@ -1,1 +1,284 @@
 @charset "UTF-8";
+
+body{
+    max-width: 100vw;
+    max-height: 100vh;
+    border-top: 20px solid var(--cor02);
+    background-image: url(../assets/imgs/bg.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.efeito{
+    position: absolute;
+    border: 2px solid rgb(129, 129, 129);
+    height: 150px;
+    width: 25px;
+    top: 0%;
+    left: 1%;
+    z-index: -1;
+}
+
+.efeito2{
+    position: absolute;
+    background-color: var(--cor03);
+    opacity: 40%;
+    height: 200px;
+    width: 25px;
+    top: 0%;
+    left: 2%;
+    z-index: -1;
+}
+
+.cabecario{
+    position: relative;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    max-height: 940px;
+    padding: 20px;
+}
+
+.conteudo-principal{
+    width: 80%;
+    max-width: 1920px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    margin: auto;
+    
+    /* justify-content: space-around; */
+}
+
+.txt-cabecario{
+    max-width: 55%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+    z-index: 2;
+}
+
+.logo-cabecario{
+    margin-top: 2.5rem;
+    max-width: 20rem;
+    padding-bottom: 0.8 rem;
+}
+
+.titulo-cabecario{
+    font-family: "Gimbal Extended";
+    color: var(--cor02);
+    font-size: 2.4rem;
+    line-height: 3.5rem;
+}
+
+.tiulo-destaque{
+    display: block;
+    text-transform: uppercase;
+    font-family: 'Made Soulmaze';
+    color: var(--cor01);
+    font-size: 3.4rem;
+}
+
+.titulo-complemento{
+    font-size: 7.7rem;
+    letter-spacing: 22px;
+    font-weight: 600;
+    display: block;
+    padding: 5% 0;
+    text-transform: uppercase;
+}
+
+.paragrafo-cabecario{
+    width: 60%;
+    font-size: 1.1em;
+    font-weight: 400;
+    color: var(--cor02);
+}
+
+.btn-cabecario{
+    width: 55%;
+    border-radius: 60px;
+    margin: 30px 0;
+    padding: 30px;
+    font-size: 0.86rem;
+    font-weight: 600;
+    background-color: var(--cor03);
+    color: white;
+    border-style: none;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.329);
+    cursor: pointer;
+    z-index: 3;
+}
+
+.btn-cabecario:hover{
+    animation: scale 1s infinite alternate;
+    background-color: var(--cor04);
+    transition: all 1s;
+}
+
+@keyframes scale{
+    from{
+        transform: scale(1);
+        background-color: var(--cor03);
+    }to {
+        transform: scale(1.1);
+        background-color: var(--cor04);
+    }
+}
+
+.img-cabecario{
+    position: absolute;
+    bottom: -1%;
+    right: 10%;
+    width: 60vw;
+    max-width: 900px;
+    z-index: 0;
+    /* padding-top: 10%; */
+}
+
+main{
+    background-color: var(--cor01);
+    display: flex;
+    flex-direction: row;
+    padding: 4em;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+}
+
+.main-elements{
+ display: flex;
+}
+
+.efeito3{
+    transform: translate(0%, 10%);
+    border: 2px solid rgb(255, 255, 255);
+    height: 500px;
+    width: 25px;
+    z-index: 1;
+}
+
+.efeito4{
+    transform: translate(-50%, 20%);
+    background-color: var(--cor03);
+    opacity: 40%;
+    height: 600px;
+    width: 25px;
+}
+
+
+.form-config{
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px 40px;
+    width: 25%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.521);
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    color: var(--cor02);
+    font-weight: 500;
+}
+
+input{
+    margin-bottom: 20px;
+    margin-top: 5px;
+    padding: 10px;
+    border-radius: 8px;
+    border-style: none;
+    border: 1.5px var(--cor02) solid;
+}
+
+.btn-form{
+    width: 80%;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin: auto;
+    font-size: 0.96rem;
+    font-weight: 600;
+    background-color: var(--cor03);
+    color: white;
+    border-style: none;
+    cursor: pointer;
+}
+
+.btn-form:hover{
+    transform: scale(1.1);
+    background-color: var(--cor04);
+    transition: all 1s;
+}
+
+aside{
+    width: 35%;
+    max-width: 500px;
+    color: white;
+    text-align: right;
+}
+
+.title-aside{
+    color: var(--cor02);
+    font-family: 'Gimbal Extended';
+    font-size: 1.7em;
+}
+
+.title-aside-effect{
+    display: block;
+    text-align: left;
+    font-size: 1em;
+    color: rgba(255, 255, 255, 0);
+    font-family: 'Made Soulmaze';
+    -webkit-text-stroke: 0.1px white;
+}
+
+.rigth{
+    text-align: right; 
+}
+
+.content-aside{
+    font-size: 1.2em;
+    line-height: 140%;
+    margin-top: 30px;
+}
+
+.content-call{
+    display: block;
+    color: var(--cor03);
+    font-weight: 700;
+    font-size: 1.6em;
+}
+
+footer{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 100vw;
+    height: 70px;
+    background-color: var(--cor02);
+    color: white;
+    gap: 7em;
+    z-index: 10;
+}
+
+.logos{
+    display: flex;
+    gap: 1em;
+    align-items: center;
+}
+
+.logo-white-hp{
+    width: 3rem;
+}
+
+.logo-white-wind{
+    width: 10rem;
+}
+
