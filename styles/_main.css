@@ -3,3 +3,5 @@
 @import url(./variables.css);
 @import url(./reset.css);
 @import url(./globals.css);
+@import url(./mediaStyles.css);
+@import url(./animationStyles.css);

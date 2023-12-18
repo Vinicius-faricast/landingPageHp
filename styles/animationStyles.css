@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+[data-animation]{
+    opacity: 0;
+    transition: .3s;
+}
+
+[data-animation="left"]{
+    transform: translate3d(-50px, 0, 0);
+}
+
+[data-animation="rigth"]{
+    transform: translate3d(50px, 0, 0);
+}
+
+[data-animation].animated {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
